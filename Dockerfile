@@ -24,11 +24,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 #http://supervisord.org/configuration.html default route start supervisord.conf
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-	php composer-setup.php && \
-	php -r "unlink('composer-setup.php');" && \
-	mv composer.phar /usr/local/bin/composer
-
 WORKDIR /var/www/html
 
 ENTRYPOINT ["supervisord"]
