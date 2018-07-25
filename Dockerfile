@@ -15,7 +15,8 @@ RUN apk update && \
 	php7-tokenizer \
 	php7-session \
 	php7-mongodb \
-	php7-pdo
+	php7-pdo && \
+	mkdir /var/log/supervisord/
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
