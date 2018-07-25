@@ -19,7 +19,7 @@ RUN apk update && \
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY supervisord.conf /etc/supervisor/supervisord.conf
+COPY supervisord.conf /etc/supervisord.conf
 #http://supervisord.org/configuration.html default route start supervisord.conf
 
 WORKDIR /var/www/html
