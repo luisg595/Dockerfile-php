@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
 RUN apk update && \
-	apk add nginx curl supervisor \
+	apk add nginx supervisor \
 	php7 \
 	php7-fpm \
 	php7-zip \
