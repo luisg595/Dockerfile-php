@@ -3,14 +3,13 @@ FROM debian:9.5
 RUN echo 'deb http://deb.debian.org/debian unstable main contrib non-free' > /etc/apt/sources.list
 
 RUN apt-get update && \
-	apt-get install -y curl supervisor apache2 \
+	apt-get install -y supervisor apache2 \
 	php7.2 \
 	php7.2-fpm \
 	php7.2-zip \
 	php7.2-mbstring \
 	php7.2-xml \
-	php7.2-mysql \
-	php-mongodb && \
+	php7.2-mysql && \
 	mkdir /var/log/supervisord/ && \
 	mkdir /run/php/ && \
 	a2enmod proxy_fcgi && \
