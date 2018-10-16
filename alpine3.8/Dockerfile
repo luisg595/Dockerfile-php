@@ -20,6 +20,10 @@ RUN apk update && \
 	php7-pdo_mysql && \
 	mkdir /var/log/supervisord/
 
+COPY www.conf /etc/php7/php-fpm.d/www.conf
+
+COPY php.ini /etc/php7/php.ini
+
 COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY supervisord.conf /etc/supervisord.conf
