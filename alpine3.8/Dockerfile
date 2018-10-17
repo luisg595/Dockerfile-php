@@ -15,6 +15,10 @@ RUN apk update && \
 	php7-tokenizer \
 	php7-session \
 	php7-ctype \
+	php7-gd \
+	php7-iconv \
+	php7-simplexml \
+	php7-xmlreader \
 	php7-mongodb \
 	php7-pdo \
 	php7-pdo_mysql && \
