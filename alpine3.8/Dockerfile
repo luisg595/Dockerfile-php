@@ -35,4 +35,6 @@ COPY supervisord.conf /etc/supervisord.conf
 
 WORKDIR /www
 
+EXPOSE 80
+
 ENTRYPOINT ["supervisord"]
