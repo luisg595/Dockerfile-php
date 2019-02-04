@@ -19,6 +19,7 @@ RUN apk update && \
 	php7-iconv \
 	php7-simplexml \
 	php7-xmlreader \
+	php7-pecl-mongodb \
 	php7-pdo \
 	php7-pdo_mysql && \
 	mkdir /var/log/supervisord/
