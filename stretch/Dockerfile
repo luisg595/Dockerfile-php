@@ -9,7 +9,8 @@ RUN apt-get update && \
 	php7.3-zip \
 	php7.3-mbstring \
 	php7.3-xml \
-	php7.3-mysql && \
+	php7.3-mysql \
+	php-mongodb && \
 	mkdir /var/log/supervisord/ && \
 	mkdir /run/php/ && \
 	a2enmod proxy_fcgi && \
