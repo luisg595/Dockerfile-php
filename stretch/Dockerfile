@@ -1,4 +1,4 @@
-FROM debian:9.7
+FROM debian:9.8
 
 RUN echo 'deb http://deb.debian.org/debian unstable main contrib non-free' > /etc/apt/sources.list
 
